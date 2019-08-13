@@ -23,10 +23,7 @@ export default class TimeGrid extends Component {
 
     this.scrollRef = React.createRef()
     this.contentRef = React.createRef()
-  }
-
-  componentWillMount() {
-    this.calculateScroll()
+    this.calculateScroll() // todo not working on init
   }
 
   componentDidMount() {
